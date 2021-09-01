@@ -1,0 +1,16 @@
+modules:
+  macro:
+    - key: reviewmedia-hello-world
+      resource: main
+      resolver:
+        function: resolver
+      title: reviewmedia
+      description: Inserts Hello world!
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/a63f6726-0244-4b2b-a00a-cabb7699c6c8
